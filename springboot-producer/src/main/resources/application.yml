@@ -1,6 +1,6 @@
 spring:
   rabbitmq:
-    addresses: 192.168.221.128:5672
+    addresses: localhost:5672
     username: guest
     password: guest
     virtual-host: /
@@ -9,9 +9,9 @@ spring:
     template:
       mandatory: true
   datasource:
-    url: jdbc:mysql://localhost:3306/rabbitmq?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
+    url: jdbc:mysql://localhost:13306/rabbitmq?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
     username: root
-    password: root
+    password: 666666
     driverClassName: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
 server:
